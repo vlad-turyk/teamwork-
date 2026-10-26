@@ -20,7 +20,15 @@ void removeTask(vector<string>& tasks, int index) {
 }
 
 // --- Функція 3: відображення списку (Учасник 2) ---
-
+void showTasks(const vector<string>& tasks) {
+    if (tasks.empty()) {
+        cout << "Список порожній" << endl;
+        return;
+    }
+    for (size_t i = 0; i < tasks.size(); i++) {
+        cout << i << ". " << tasks[i] << endl;
+    }
+}
 int main() {
     return 0;
 }
