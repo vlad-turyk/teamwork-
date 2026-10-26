@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <windows.h>
 
 using namespace std;
 
@@ -30,6 +31,9 @@ void showTasks(const vector<string>& tasks) {
     }
 }
 int main() {
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
+
     vector<string> tasks;
     string cmd;
 
