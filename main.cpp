@@ -10,6 +10,14 @@ void addTask(vector<string>& tasks, const string& title) {
     cout << "Додано: " << title << endl;
 }
 // --- Функція 2: видалення завдання (Учасник 2) ---
+void removeTask(vector<string>& tasks, int index) {
+    if (index >= 0 && index < (int)tasks.size()) {
+        cout << "Видалено: " << tasks[index] << endl;
+        tasks.erase(tasks.begin() + index);
+    } else {
+        cout << "Невірний номер" << endl;
+    }
+}
 
 // --- Функція 3: відображення списку (Учасник 2) ---
 
